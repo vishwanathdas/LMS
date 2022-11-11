@@ -1,0 +1,492 @@
+{% load static %} {% load customfilter %}
+<html>
+<head>
+ <title>VKPS 1 LMS</title>
+
+ <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+ <style>
+  *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    
+    }
+    body{
+      background: rgb(248,254,254);
+    background: linear-gradient(118deg, rgba(248,254,254,1) 0%, rgba(212,247,251,1) 98%);
+    }
+    header{
+     width: 100%;
+     height: 100vh;
+     background-image: url('');
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+    
+    }
+    
+    .mainheader{
+     width: 100%;
+     height: 100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    }
+    
+    .mainheader .logo img{
+     width: 250px; height: 150px;
+     padding-left: 60px;
+    }
+    
+    .mainheader nav{
+     width: 450px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+    }
+    
+    .mainheader nav a{
+     text-decoration: none;
+     color: black;
+     text-transform: uppercase;
+    }
+    
+    .menubtn{
+     margin-right: 60px;
+    }
+    .mainheader button{
+     padding: 10px 45px;
+     text-align: center;
+     font-size: 14px;
+     color: #fff;
+     border: none;
+     background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+     border-radius: 10px;
+    }
+    
+    
+    main{
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    }
+    
+    main .right-sec img{
+     padding-right: 70px;
+     hieght:500px;
+     width:1000;
+    }
+    
+    main .left-sec{
+     padding-left: 100px;
+    }
+    
+    .left-sec h2{
+     font-size: 20px;
+     text-transform: capitalize;
+     font-weight: lighter;
+     color: #242424;
+     margin-top: 100px;
+    }
+    
+    .left-sec h1{
+     font-size: 55px;
+     text-transform: capitalize;
+     font-weight: 700;
+     margin: 15px 0;
+    }
+    
+    .left-sec p{
+     margin-bottom: 20px;
+    }
+    
+    .left-sec button{
+     padding: 15px 45px;
+     text-align: center;
+     font-size: 14px;
+     color: #fff;
+     border: none;
+     background-image: linear-gradient(to right,#649bff,#0070fa,#649bff);
+     border-radius: 10px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.page-contain {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #E7F3F1;
+  border: .75em solid white;
+  padding: 2em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.data-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 20.75em;
+  min-height: 20.75em;
+  overflow: hidden;
+  border-radius: .5em;
+  text-decoration: none;
+  background: white;
+  margin: 1em;
+  padding: 2.75em 2.5em;
+  box-shadow: 0 1.5em 2.5em -.5em rgba(#000000, .1);
+  transition: transform .45s ease, background .45s ease;
+  
+  h3 {
+    color: #2E3C40;
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 1;
+    padding-bottom: .5em;
+    margin: 0 0 0.142857143em;
+    border-bottom: 2px solid #753BBD;
+    transition: color .45s ease, border .45s ease;
+  }
+
+  h4 {
+    color: #627084;
+    text-transform: uppercase;
+    font-size: 1.125em;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin: 0 0 1.777777778em;
+    transition: color .45s ease;
+  }
+
+  p {
+    opacity: 0;
+    color: #FFFFFF;
+    font-weight: 600;
+    line-height: 1.8;
+    margin: 0 0 1.25em;
+    transform: translateY(-1em);
+    transition: opacity .45s ease, transform .5s ease;
+  }
+
+  .link-text {
+    display: block;
+    color: #753BBD;
+    font-size: 1.125em;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: auto 0 0;
+    transition: color .45s ease;
+
+    svg {
+      margin-left: .5em;
+      transition: transform .6s ease;
+      
+      path {
+        transition: fill .45s ease;
+      }
+    }
+  }
+  
+  &:hover {
+    background: #753BBD;
+    transform: scale(1.02);
+    
+    h3 {
+      color: #FFFFFF;
+      border-bottom-color: #A754C4;
+    }
+
+    h4 {
+      color: #FFFFFF;
+    }
+
+    p {
+      opacity: 1;
+      transform: none;
+    }
+
+    .link-text {
+      color: #FFFFFF;
+
+      svg {
+        animation: point 1.25s infinite alternate;
+        
+        path {
+          fill: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+.vd{
+  font-weight:bold;
+  color:Green;
+}
+.cd{
+  color:black;
+}
+.header{
+  <img src="{% static 'assets/default/img/back.jpg' %}">
+}
+.dec{
+  text-decoration: none;
+}
+
+@keyframes point {
+  0% {
+   transform: translateX(0);
+  }
+  100% {
+    transform: translateX(.125em);
+  }
+}
+ </style>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+<body>
+  
+<header class="header">
+ <div class="mainheader">
+  <div class="logo">
+   <img src="{% static 'assets/default/img/LOGO.PNG' %}">
+  </div>
+
+  <nav>
+   <a href="#">home</a>
+   <a href="#">services</a>
+   <a href="#footer">about</a>
+   <a href="#" target="_blank">contact</a>
+  </nav>
+
+  <div class="menubtn">
+   <button><a href="/login" style="color:white">Login</a></button>
+  </div>
+ </div>
+
+
+ <main>
+  <section class="left-sec">
+   
+   <h2>  We The Best </h2><h1>Online Library <br>Management System</h1>
+   <p>Effectively Manage, Track, and Perform Daily Library Operations with Ease!.</p>
+   <button><a href="/login" style="color:white">
+    (Click Login)
+    </a>
+   </button></section>
+  
+
+  <section class="right-sec">
+   <figure>
+    <img src="{% static 'assets/default/img/back2.png' %}">
+   </figure>
+  </section>
+  
+ </main>
+</header>
+<!---main content-->
+<div class="container">
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-body">
+    <h5 class="card-title "><strong>Library Management System Software</strong></h5>
+    <p class="card-text">A library management system is software that is designed to manage all the functions of a library. It helps librarian to maintain the database of new books and the books that are borrowed by members along with their due dates.
+
+      This system completely automates all your library s activities. The best way to maintain, organize, and handle countless books systematically is to implement a library management system software.
+      
+      A library management system is used to maintain library records. It tracks the records of the number of books in the library, how many books are issued, or how many books have been returned or renewed or late fine charges, etc.
+      
+      You can find books in an instant, issue/reissue books quickly, and manage all the data efficiently and orderly using this system. The purpose of a library management system is to provide instant and accurate data regarding any type of book, thereby saving a lot of time and effort.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+  
+
+
+<div>
+<section class="page-contain">
+  <h1 class="vd">Modules Of Library Management System Software</h1>
+  <a href="#" class="data-card cd">
+    <h3 class="vd">OPAC</h3>
+    <h4>Care Facilities</h4>
+    <p>Online Public Access Catalogue or OPAC is a digital catalogue that enables the users to search for books, journals, or any other material by entering keywords such as the name of the book, its title, author’s name, etc.</p>
+    <span class="link-text">
+      View All Providers
+      <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z" fill="#753BBD"/>
+</svg>
+    </span>
+  </a>
+  <a href="#" class="data-card cd">
+    <h3 class="vd">Circulation</h3>
+    <h4>Employees</h4>
+    <p>The circulation module enables the librarian to create and manage borrower types along with keeping a tab on their book issue date, return date, dues, and fines. It enables a smooth circulation of books in the library.</p>
+    <span class="link-text">
+      View Information
+      <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z" fill="#753BBD"/>
+</svg>
+    </span>
+  </a>
+
+
+  <a href="#" class="data-card cd">
+    <h3 class="vd">Acquisition & Cataloguing</h3>
+    <h4>Care Facilities</h4>
+    <p>The acquisition & cataloguing module of the library management system enables the librarian to select & buy books, journals, and other resources and create a database of the same for easy book search..</p>
+    <span class="link-text">
+      View All Providers
+      <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z" fill="#753BBD"/>
+</svg>
+    </span>
+  </a>
+  <a href="#" class="data-card cd">
+    <h3 class="vd">Serial Control</h3>
+    <h4>Employees</h4>
+    <p>The serial control module of the library software enables the librarians to handle or control processes such as subscription, renewals of books or their cancellations and generate accurate MIS reports.</p>
+    <span class="link-text">
+      View Information
+      <svg width="25" height="16" viewBox="0 0 25 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17.8631 0.929124L24.2271 7.29308C24.6176 7.68361 24.6176 8.31677 24.2271 8.7073L17.8631 15.0713C17.4726 15.4618 16.8394 15.4618 16.4489 15.0713C16.0584 14.6807 16.0584 14.0476 16.4489 13.657L21.1058 9.00019H0.47998V7.00019H21.1058L16.4489 2.34334C16.0584 1.95281 16.0584 1.31965 16.4489 0.929124C16.8394 0.538599 17.4726 0.538599 17.8631 0.929124Z" fill="#753BBD"/>
+</svg>
+    </span>
+  </a>
+</section>
+</div>
+
+<!-----------footer---------->
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted dec">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>VKPS LMS
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">HTML</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">CSS</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">JS</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">PYTHON</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> New delhi , india</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            vishwanthdas512@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 91 8406960976</p>
+        
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="https://vishwanathdas.github.io/">Vishwanath Das</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-1611bd6c-4ad0-4ded-adbb-0967160a57ac"></div>
+</body>
+</html>
